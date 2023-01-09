@@ -1,0 +1,14 @@
+<div class="content" role="main">
+  <h2>Service Page</h2>
+  <p>{{ usersToken }}</p>
+  <label>
+    <input
+      type="checkbox"
+      [formControl]="checboxInput"
+      (change)="toggleCheck()"
+    />
+    Check me
+  </label>
+</div>
+
+<router-outlet></router-outlet>

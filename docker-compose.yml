@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  nginx:
+    container_name: nginx
+    ports:
+     - 80:80
+    depends_on:
+     - app-product
+     - app-services
+     - app-spa
+    build:
+      context: .
+      dockerfile: ./nginx/Dockerfile
+
+  app-product:
+    container_name: app-product
+    build:
+      context: .
+      dockerfile: ./app1/Dockerfile
+
+  app-services:
+    container_name: app-services
+    build:
+      context: .
+      dockerfile: ./app2/Dockerfile
+
+  app-spa:
+    container_name: app-spa
+    build:
+      context: .
+      dockerfile: ./spa-react/Dockerfile
