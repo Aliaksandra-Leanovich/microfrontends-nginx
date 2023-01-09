@@ -1,4 +1,4 @@
-#### Start
+#### Build
 
 ```sh
 docker-compose build
