@@ -1,4 +1,4 @@
-#### Build
+#### Start
 
 ```sh
 docker-compose build
@@ -7,7 +7,7 @@ docker-compose build
 #### Run
 
 ```sh
-docker-compose run
+docker-compose up
 ```
 
 ## About The Project
